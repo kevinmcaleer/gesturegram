@@ -2,6 +2,11 @@ import cv2
 import pandas as pd
 import numpy as np
 from os import path
+from pygame.camera import Camera
+
+c = Camera()
+
+image = c.get_image()
 
 from keras import load_model
 model = load_model(path) # open saved model/weights from .h5 file
